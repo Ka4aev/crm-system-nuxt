@@ -10,8 +10,11 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@/app/components",
-    "utils": "@/utils"
+    "components": "~/app/components",
+    "composables": "~/app/composables",
+    "utils": "~/app/utils/shadcn/utils",
+    "ui": "~/app/components/ui",
+    "lib": "~/app/utils/shadcn/utils"
   },
   "iconLibrary": "lucide"
 }

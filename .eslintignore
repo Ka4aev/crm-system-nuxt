@@ -1,8 +1,0 @@
-node_modules
-dist
-.nuxt
-.output
-*.d.ts
-.git
-.idea
-.cursor 

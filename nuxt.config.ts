@@ -8,16 +8,21 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/eslint",
     "shadcn-nuxt",
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Lato: {
+            wght: [300, 400, 700],
+            ital: [300],
+          },
+        },
+      },
+    ],
+    "@nuxt/icon",
   ],
   shadcn: {
     prefix: "Ui",
     componentDir: "./app/components/ui",
   },
-  vite: {
-    resolve: {
-      alias: {
-        "~/lib/utils": "./app/utils/shadcn/utils"
-      }
-    }
-  }
 });

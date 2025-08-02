@@ -20,5 +20,14 @@ export default withNuxt(
       "vue/multi-word-component-names": "off",
       "prettier/prettier": ["warn", { endOfLine: "auto" }],
     },
-  }
+  },
+  {
+    ignores: [
+      "**/node_modules",
+      "**/dist",
+      "**/.nuxt",
+      "**/.output",
+      "**/*.d.ts",
+    ],
+  },
 );

@@ -1,10 +1,8 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <section class="grid">
-    <LayoutSidebar  />
+    <LayoutSidebar />
     <div>
       <slot />
     </div>
