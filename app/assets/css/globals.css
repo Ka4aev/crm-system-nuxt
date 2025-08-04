@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: #0b1120;
@@ -42,6 +41,7 @@
   * {
     @apply border-border;
   }
+  body:has(.loader-selector){overflow: hidden}
   body {
     @apply bg-background text-foreground text-base;
     font-family: 'Lato', sans-serif;

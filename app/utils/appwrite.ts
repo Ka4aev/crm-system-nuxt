@@ -1,17 +1,16 @@
-import { Client, Account, Databases, Storage } from "appwrite";
+import { Client, Account, Databases, Storage, ID } from "appwrite";
 
-function getAppwrite(config: any) {
+export function getAppwrite() {
   const client = new Client()
-    .setEndpoint(config.public.appwriteEndpoint)
-    .setProject(config.public.appwriteProjectId);
+    .setEndpoint(useRuntimeConfig().public.appwriteEndpoint)
+    .setProject(useRuntimeConfig().public.appwriteProjectId);
 
   const account = new Account(client);
   const databases = new Databases(client);
-  const storage = new Storage(client)
-  return { client, account, databases, storage };
+  const storage = new Storage(client);
+  const uniqueId = ID.unique();
+  return { client, account, databases, storage, uniqueId };
 }
-
-export { getAppwrite };
 
 // import { APP_WRITE_ID } from '@/app.constants'
 // import { Account, Client, Databases, Storage } from 'appwrite'
