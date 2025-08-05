@@ -1,4 +1,3 @@
-import { EnumStatus } from "#shared"
 export const KANBAN_DATA: IColumn[] = [
 	{
 		id: EnumStatus.todo,
