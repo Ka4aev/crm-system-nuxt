@@ -5,7 +5,6 @@
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"],
-      "~/lib/utils": ["./app/utils/shadcn/utils"]
     }
   },
   "files": [],

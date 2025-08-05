@@ -7,10 +7,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
   try {
     const user = await account.get();
-    set({
-      email: user.email,
-      status: true,
-    });
+    if (user) set(user);
+
     if (to.path === "/login") {
       return navigateTo("/");
     }
